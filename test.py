@@ -8,10 +8,10 @@ from object_detection.utils import label_map_util
 #model_url = "https://tfhub.dev/tensorflow/ssd_mobilenet_v2/fpnlite_320x320/1"
 #model = hub.load(model_url)
 
-model = tf.saved_model.load("C:/Users/HP/Documents/Arduino/esp32-cam WebServer/saved_model")
+model = tf.saved_model.load("/saved_model")
 
 # Load label map
-label_map_path = "C:/Users/HP/Documents/Arduino/esp32-cam WebServer/label_map.pbtxt"  # label map file
+label_map_path = "/label_map.pbtxt"  # label map file
 label_map = label_map_util.load_labelmap(label_map_path)
 categories = label_map_util.convert_label_map_to_categories(label_map, max_num_classes=90,
                                                             use_display_name=True)
