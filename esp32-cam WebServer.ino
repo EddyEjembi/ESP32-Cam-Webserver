@@ -2,8 +2,8 @@
 #include "WiFi.h"
 #include "ESPAsyncWebServer.h"
 
-const char* ssid = "Infinix HOT7";
-const char* password = "eddyedwards";
+const char* ssid = "XXXXXXXXXX";
+const char* password = "**********";
 
 const int httpPort = 80;
 
